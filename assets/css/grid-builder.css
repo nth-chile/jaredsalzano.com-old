@@ -1,0 +1,42 @@
+em {
+  font-style: normal;
+  font-weight: bold; }
+
+form, .ui-wrap, header, .notes {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin: 1rem auto;
+  padding: 5px 1rem;
+  width: 95.76vw; }
+
+header {
+  background-color: transparent;
+  padding-left: 0; }
+
+.grid {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
+  min-height: 23.5vw;
+  width: 95.76vw; }
+
+.grid__item__wrap {
+  box-sizing: border-box;
+  padding: 3px; }
+
+.grid__item {
+  display: block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%; }
+
+.ghost .grid__item {
+  background-color: transparent; }
+
+.notes {
+  padding-left: 2rem; }
+  .notes p {
+    max-width: 37rem; }
+
+/*# sourceMappingURL=grid-builder.css.map */
