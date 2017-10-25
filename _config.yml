@@ -16,7 +16,7 @@
 title: Jared Salzano — Portfolio
 email: jaredsalzano@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, my name is Jared Salzano. I'm a writer, musician, and, I guess most importantly to you, a Web Developer. I am currently looking for full-time or freelance opportunities in New York City.
+  Hi, my name is Jared Salzano. I'm a Web Developer living in Brooklyn. I have a creative drive to turn powerful ideas into living websites and applications. I do freelance work, but currently open to full-time opportunities as well. Oh, and my favorite stack is the MERN stack.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.jaredsalzano.com"
 

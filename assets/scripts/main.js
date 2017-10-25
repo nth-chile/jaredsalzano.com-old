@@ -80,7 +80,7 @@ $(document).ready(function(){
 			} else if (layout == 'medium--1' || layout == 'medium--2') {
 				if($('.home-wrap').length > 0) {
 					buildTinyGrid();
-					if($('.tooltip').length == 0) createTooltips();
+					//if($('.tooltip').length == 0) createTooltips();
 				} else if ($('.slick').length > 0 ) {
 					$('.slick').slick('slickUnfilter');
 					$('html').css('position', 'static');
@@ -93,7 +93,7 @@ $(document).ready(function(){
 			else if (layout == 'full') {
 				if ($('.home-wrap').length > 0) {
 					buildGrid();
-					if($('.tooltip').length == 0) createTooltips();
+					//if($('.tooltip').length == 0) createTooltips();
 				}
 			}
 			removeLoadScreen();
@@ -154,7 +154,7 @@ $(document).ready(function(){
 		if($('.home-wrap').length > 0) {
 			buildTinyGrid();
 			$('.grid__item__wrap:not(.ghost) .grid__item').attr('data-tilt', '');
-			if($('.tooltip').length == 0) createTooltips();
+			//if($('.tooltip').length == 0) createTooltips();
 		} else if ($('.slick').length > 0 ) {
 			setRowItemWidths();
 			setColumnItemHeight();
@@ -165,7 +165,7 @@ $(document).ready(function(){
 		if($('.home-wrap').length > 0) {
 			buildGrid();
 			$('.grid__item__wrap:not(.ghost) .grid__item').attr('data-tilt', '');
-			if($('.tooltip').length == 0) createTooltips();
+			//if($('.tooltip').length == 0) createTooltips();
 		}  else if ($('.slick').length > 0 ) {
 			setColumnItemHeight();
 			setRowItemWidths();
@@ -267,39 +267,39 @@ $(document).ready(function(){
 		$('.full-height').parent('div').addClass('full-height__container');
 	}
 
-	function createTooltips() {
-		//tooltip(type, target, image, caption, captionBgColor);
-		tooltip_img(
-			'#me',
-			'assets/images/tooltips/me.jpg',
-			'Photo by <a href="https://www.instagram.com/smmonson/">Shannon</a>',
-			'Me'
-		);
-		tooltip_img_boxBottom(
-			'#stealth-gaming',
-			'assets/images/tooltips/stealthgaming.png',
-			'This is the only decent screenshot from the Wayback Machine that I could grab of one the many schemes me and friends in high school dreamed up. I was usually the graphics guy because I wasn’t nearly as smart as everyone else, and this is the type of stuff I would come up with... 😂',
-			'Project with friends back in the day',
-			'rgb(66, 90, 131)'
-		);
-		tooltip_img(
-			'#clickingaway',
-			'assets/images/tooltips/clickingaway.png',
-			'Clicking away, every day.<br />Photo by <a href="https://dribbble.com/joshliston" target="_blank">Josh</a>.'
-		);
-		tooltip_text(
-			'#work-experience',
-			'<b>Work Experience:</b>',
-			'<ul><li>— <b>Current:</b> Independent</li><li>— <b>Nelson Cash:</b> Sr. Designer, 6 years</li><li>— <b>Doejo:</b> Sr. Designer, 1 year</li><li>— <b>Smith Brothers Advertising:</b> Designer, 1 year</li><li>— <b>Mind Over Media:</b> Designer, 1 year</li></ul>'
-		);
-		tooltip_img_boxRight(
-			'#edinboro',
-			'assets/images/tooltips/edinboro.png',
-			'<div style="color:rgb(162, 157, 157);padding-bottom:.5rem"><b>EDUCATION:<br />— Edinboro Univ. of PA</b><br /><span style="padding-left:15px">BFA, 2008</span></div>This picture sums up what it was like to walk on campus most of the year. I experienced lake-effect snowstorms, amazing friendships and lots of late nights at the studio.',
-			'Edinboro University of Pennsylvania',
-			'rgb(46, 43, 43)'
-		);
-	}
+	// function createTooltips() {
+	// 	//tooltip(type, target, image, caption, captionBgColor);
+	// 	tooltip_img(
+	// 		'#me',
+	// 		'assets/images/tooltips/me.jpg',
+	// 		'Photo by <a href="https://www.instagram.com/smmonson/">Shannon</a>',
+	// 		'Me'
+	// 	);
+	// 	tooltip_img_boxBottom(
+	// 		'#stealth-gaming',
+	// 		'assets/images/tooltips/stealthgaming.png',
+	// 		'This is the only decent screenshot from the Wayback Machine that I could grab of one the many schemes me and friends in high school dreamed up. I was usually the graphics guy because I wasn’t nearly as smart as everyone else, and this is the type of stuff I would come up with... 😂',
+	// 		'Project with friends back in the day',
+	// 		'rgb(66, 90, 131)'
+	// 	);
+	// 	tooltip_img(
+	// 		'#clickingaway',
+	// 		'assets/images/tooltips/clickingaway.png',
+	// 		'Clicking away, every day.<br />Photo by <a href="https://dribbble.com/joshliston" target="_blank">Josh</a>.'
+	// 	);
+	// 	tooltip_text(
+	// 		'#work-experience',
+	// 		'<b>Work Experience:</b>',
+	// 		'<ul><li>— <b>Current:</b> Independent</li><li>— <b>Nelson Cash:</b> Sr. Designer, 6 years</li><li>— <b>Doejo:</b> Sr. Designer, 1 year</li><li>— <b>Smith Brothers Advertising:</b> Designer, 1 year</li><li>— <b>Mind Over Media:</b> Designer, 1 year</li></ul>'
+	// 	);
+	// 	tooltip_img_boxRight(
+	// 		'#edinboro',
+	// 		'assets/images/tooltips/edinboro.png',
+	// 		'<div style="color:rgb(162, 157, 157);padding-bottom:.5rem"><b>EDUCATION:<br />— Edinboro Univ. of PA</b><br /><span style="padding-left:15px">BFA, 2008</span></div>This picture sums up what it was like to walk on campus most of the year. I experienced lake-effect snowstorms, amazing friendships and lots of late nights at the studio.',
+	// 		'Edinboro University of Pennsylvania',
+	// 		'rgb(46, 43, 43)'
+	// 	);
+	// }
 	function darkDots(disconnect) {
 			var darkSlideIndexes = [];
 			$('.slick .slide').each( function(index) {
@@ -394,82 +394,82 @@ $(document).ready(function(){
           			'transform': 'scale(' + scale +')',
 		});
 	}
-	function tooltip_img(target, image, caption, alt) {
-		var div = document.createElement('div');
-		div.className = 'tooltip tooltip-img';
-		var fig = document.createElement('figure');
-		var img = document.createElement('img');
-		img.src = image;
-		if (arguments.length = 4) img.alt = alt;
-		var cptn = document.createElement('figcaption');
-		cptn.innerHTML = caption;
-		cptn.className = 'tooltip__figcaption';
-		fig.appendChild(img);
-		fig.appendChild(cptn);
-		div.appendChild(fig);
-		document.body.appendChild(div);
-		showOnHover(div, target);
+	// function tooltip_img(target, image, caption, alt) {
+	// 	var div = document.createElement('div');
+	// 	div.className = 'tooltip tooltip-img';
+	// 	var fig = document.createElement('figure');
+	// 	var img = document.createElement('img');
+	// 	img.src = image;
+	// 	if (arguments.length = 4) img.alt = alt;
+	// 	var cptn = document.createElement('figcaption');
+	// 	cptn.innerHTML = caption;
+	// 	cptn.className = 'tooltip__figcaption';
+	// 	fig.appendChild(img);
+	// 	fig.appendChild(cptn);
+	// 	div.appendChild(fig);
+	// 	document.body.appendChild(div);
+	// 	showOnHover(div, target);
 
-	}
-	function tooltip_img_boxBottom(target, image, caption, alt, captionBgColor) {
-		var div = document.createElement('div');
-		div.className = 'tooltip tooltip-img-box--bottom';
-		var fig = document.createElement('figure');
-		var img = document.createElement('img');
-		img.src = image;
-		if (arguments.length = 5) img.alt = alt;
-		var cptn = document.createElement('figcaption');
-		cptn.style.backgroundColor = captionBgColor;
-		cptn.innerHTML = caption;
-		cptn.className = 'tooltip__figcaption';
-		fig.appendChild(img);
-		fig.appendChild(cptn);
-		div.appendChild(fig);
-		document.body.appendChild(div);
-		$(img).load(function() {
-			$(fig).width($(img).width());
-		})
-		.each(function() {
-		  if(this.complete) $(this).trigger('load');
-		});
-		showOnHover(div, target);
-	}
-	function tooltip_img_boxRight(target, image, caption, alt, captionBgColor) {
-		var div = document.createElement('div');
-		div.className = 'tooltip tooltip-img-box--right';
-		var fig = document.createElement('figure');
-		var img = document.createElement('img');
-		img.src = image;
-		if (arguments.length = 5) img.alt = alt;
-		var cptn = document.createElement('figcaption');
-		cptn.style.backgroundColor = captionBgColor;
-		cptn.innerHTML = caption;
-		cptn.className = 'tooltip__figcaption';
-		fig.appendChild(img);
-		fig.appendChild(cptn);
-		div.appendChild(fig);
-		document.body.appendChild(div);
-		$(img).load(function() {
-			$(fig).height($(img).height());
-			$(cptn).width($(img).width());
-		})
-		.each(function() {
-		  if(this.complete) $(this).trigger('load');
-		});
-		showOnHover(div, target);
-	}
-	function tooltip_text(target, title, text) {
-		var div = document.createElement('div');
-		div.className = 'tooltip tooltip-text';
-		var titleElt = document.createElement('h4');
-		var textElt = document.createElement('h4');
-		titleElt.innerHTML = title;
-		textElt.innerHTML = text;
-		div.appendChild(titleElt);
-		div.appendChild(textElt);
-		document.body.appendChild(div);
-		showOnHover(div, target);
-	}
+	// }
+	// function tooltip_img_boxBottom(target, image, caption, alt, captionBgColor) {
+	// 	var div = document.createElement('div');
+	// 	div.className = 'tooltip tooltip-img-box--bottom';
+	// 	var fig = document.createElement('figure');
+	// 	var img = document.createElement('img');
+	// 	img.src = image;
+	// 	if (arguments.length = 5) img.alt = alt;
+	// 	var cptn = document.createElement('figcaption');
+	// 	cptn.style.backgroundColor = captionBgColor;
+	// 	cptn.innerHTML = caption;
+	// 	cptn.className = 'tooltip__figcaption';
+	// 	fig.appendChild(img);
+	// 	fig.appendChild(cptn);
+	// 	div.appendChild(fig);
+	// 	document.body.appendChild(div);
+	// 	$(img).load(function() {
+	// 		$(fig).width($(img).width());
+	// 	})
+	// 	.each(function() {
+	// 	  if(this.complete) $(this).trigger('load');
+	// 	});
+	// 	showOnHover(div, target);
+	// }
+	// function tooltip_img_boxRight(target, image, caption, alt, captionBgColor) {
+	// 	var div = document.createElement('div');
+	// 	div.className = 'tooltip tooltip-img-box--right';
+	// 	var fig = document.createElement('figure');
+	// 	var img = document.createElement('img');
+	// 	img.src = image;
+	// 	if (arguments.length = 5) img.alt = alt;
+	// 	var cptn = document.createElement('figcaption');
+	// 	cptn.style.backgroundColor = captionBgColor;
+	// 	cptn.innerHTML = caption;
+	// 	cptn.className = 'tooltip__figcaption';
+	// 	fig.appendChild(img);
+	// 	fig.appendChild(cptn);
+	// 	div.appendChild(fig);
+	// 	document.body.appendChild(div);
+	// 	$(img).load(function() {
+	// 		$(fig).height($(img).height());
+	// 		$(cptn).width($(img).width());
+	// 	})
+	// 	.each(function() {
+	// 	  if(this.complete) $(this).trigger('load');
+	// 	});
+	// 	showOnHover(div, target);
+	// }
+	// function tooltip_text(target, title, text) {
+	// 	var div = document.createElement('div');
+	// 	div.className = 'tooltip tooltip-text';
+	// 	var titleElt = document.createElement('h4');
+	// 	var textElt = document.createElement('h4');
+	// 	titleElt.innerHTML = title;
+	// 	textElt.innerHTML = text;
+	// 	div.appendChild(titleElt);
+	// 	div.appendChild(textElt);
+	// 	document.body.appendChild(div);
+	// 	showOnHover(div, target);
+	// }
 	//for article pages, divs in a 'div.column' are equal height
 	function setColumnItemHeight() {
 		$('.column').children().each(function() {
@@ -546,45 +546,45 @@ $(document).ready(function(){
 		});
 	};
 	// show tooltips at mouse position
-	function showOnHover(elt, target) {
-		$('body').on('mouseenter', target, function(e) {
-			var x;
-			var y;
-			if(e.pageX || e.pageY) {
-				x = e.pageX;
-				y = e.pageY;
-			}
-			else if (e.clientX || e.clientY) {
-				x = e.clientX + document.body.scrollLeft
-					+ document.documentElement.scrollLeft;
-				y = e.clientY + document.body.scrollTop
-					+ document.documentElement.scrollTop;
-			}
-			var paddingBottom = parseInt($(elt).css('padding-bottom').slice(0, -2));
-			var paddingTop = parseInt($(elt).css('padding-top').slice(0, -2));
-			elt.style.top = y - ($(elt).height() + 20 ) - (paddingBottom + paddingTop) + 'px';
-			if ( x - $(elt).width() / 2 < 0 )
-				elt.style.left = 0;
-			else if ( x + $(elt).width() / 2 > $(window).width() ) {
-				elt.style.left = $(window).width() - $(elt).width() + 'px';
-			}
-			else
-				elt.style.left = x - $(elt).width() / 2 + 'px';
+	// function showOnHover(elt, target) {
+	// 	$('body').on('mouseenter', target, function(e) {
+	// 		var x;
+	// 		var y;
+	// 		if(e.pageX || e.pageY) {
+	// 			x = e.pageX;
+	// 			y = e.pageY;
+	// 		}
+	// 		else if (e.clientX || e.clientY) {
+	// 			x = e.clientX + document.body.scrollLeft
+	// 				+ document.documentElement.scrollLeft;
+	// 			y = e.clientY + document.body.scrollTop
+	// 				+ document.documentElement.scrollTop;
+	// 		}
+	// 		var paddingBottom = parseInt($(elt).css('padding-bottom').slice(0, -2));
+	// 		var paddingTop = parseInt($(elt).css('padding-top').slice(0, -2));
+	// 		elt.style.top = y - ($(elt).height() + 20 ) - (paddingBottom + paddingTop) + 'px';
+	// 		if ( x - $(elt).width() / 2 < 0 )
+	// 			elt.style.left = 0;
+	// 		else if ( x + $(elt).width() / 2 > $(window).width() ) {
+	// 			elt.style.left = $(window).width() - $(elt).width() + 'px';
+	// 		}
+	// 		else
+	// 			elt.style.left = x - $(elt).width() / 2 + 'px';
 
-		});
-		$('body').on('mouseleave', target, function(e) {
-			setTimeout(function(){
-				if(!$(elt).is(':hover'))
-					elt.style.left = '-9999px';
-				else {
-					$(elt).mouseleave(function(e) {
-						elt.style.left = '-9999px';
-					});
-				}
-			}, 150);
-		});
+	// 	});
+	// 	$('body').on('mouseleave', target, function(e) {
+	// 		setTimeout(function(){
+	// 			if(!$(elt).is(':hover'))
+	// 				elt.style.left = '-9999px';
+	// 			else {
+	// 				$(elt).mouseleave(function(e) {
+	// 					elt.style.left = '-9999px';
+	// 				});
+	// 			}
+	// 		}, 150);
+	// 	});
 
-	}
+	// }
 
 
 });

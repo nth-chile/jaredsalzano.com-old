@@ -10,11 +10,13 @@ style: width:100%
 
 <div><img class='full-height' src='{{ site.url }}/assets/images/posts/Deadtunes.live/deadtunes_mobile.jpg'></div>
 
-<p class='bg'>I built a web app that streams the <a href='https://archive.org/' target='_blank'>Internet Archive's</a> live Grateful Dead archive.</p>
+<p class='bg'>I built a web app that streams the <a href='https://archive.org/' target='_blank'>Internet Archive's</a> live Grateful Dead collection.</p>
 
 {{slide['end']}}
 
 {{slide['startdesktop']}}
+
+<p>I built a web app that streams the <a href='https://archive.org/' target='_blank'>Internet Archive's</a> live Grateful Dead collection.</p>
 
 <div><img src='{{ site.url }}/assets/images/posts/Deadtunes.live/deadtunes_thumb.jpg'></div>
 
@@ -28,23 +30,19 @@ Deadtunes is a single-page application that implements an MVC pattern written in
 
 {{slide['start']}}
 
-I took an unnecessary step that allowed me to learn how to build a MongoDB database and query it from server-side JavaScript. I wrote a script that iterates through the items in the Archive database, extracting the relevant data and inserting it into a MongoDB database.
+I took an unnecessary step that allowed me to learn how to build a MongoDB database and query it from server-side JavaScript. I wrote a script that iterates through the items in the Archive database, extracts the relevant data and inserts it into a MongoDB database.
 
 {{slide['end']}}
 
 {{slide['start']}}
 
-Then, I used Express JS to build a RESTful API so that, for instance, `http://deadtunes.live/api/1975-08-13` returns a JSON response including relevant data about the recordings of each song the Grateful Dead played on August 13, 1975.
+Then, I used Express JS to build a RESTful API so that, for instance, <code style='word-break: break-all'>http://deadtunes.live/api/1975-08-13</code> returns a JSON response including relevant data about the recordings of each song the Grateful Dead played on August 13, 1975.
 
 {{slide['end']}}
 
 {{slide['start']}}
 
-When the user selects a year, date or track, the client-side code looks at the URL hash and uses it to query the API and update the DOM. Voila, a SPA.
-
-{{slide['end']}}
-
-{{slide['start']}}
+When the user selects a year, date or track, the client-side code looks at the URL hash and uses it to query the API and update the DOM. Voila &mdash; a SPA.
 
 <a class='link-button-2' href='http://deadtunes.live/' target='_blank'>Go check it out!</a>
 
