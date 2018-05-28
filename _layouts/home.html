@@ -32,15 +32,17 @@ layout: default
 </script>
 <div class='home-wrap'>
 	<header>
+		{{ site.id.avatar }}
 		<div class='id small-text'>
-			{{ site.id.avatar }}
 			<h4 class='desktop id__title'><b>{{ site.id.title }}</b></h4>
 			<h4 class='desktop id__subtitle'>{{ site.id.subtitle }}</h4>
 		</div>
 	</header>
 
 	<div class='about'>
-		<p>Hi, my name is Jared Salzano. I'm a Web Developer living in Brooklyn. I have a creative drive to turn powerful ideas into living websites and applications. I do freelance work, but currently open to full-time opportunities as well. Oh, and my favorite stack is the MERN stack.</p>
+		<p>Hi, my name is Jared Salzano. I'm a Web Developer living in Brooklyn, with a creative drive to turn powerful ideas into living websites and applications. I do freelance work, but currently open to part-time opportunities as well. See my resume <a href='http://jaredsalzano.com/resume.html' target='_blank'>here</a>.</p>
+
+		<p>Here are some projects I've worked on.</p>
 	</div>
 
 	<div class='grid'>
@@ -80,8 +82,12 @@ layout: default
 	{% endif %}
 	</div>
 
-	<div class='about'>
+	<!-- <div class='about'>
 		<p>Want to build something together? Just <a href='mailto:jaredsalzano@gmail.com' target='_top'>email me</a>.</p>
-	</div>
+	</div> -->
 	{% include footer.html %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+	<script src="{{ '/assets/scripts/fish/Fish.js' | prepend: site.url }}"></script>
+	<script src="{{ '/assets/scripts/fish/main.js' | prepend: site.url }}"></script>
 </div>

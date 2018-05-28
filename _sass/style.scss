@@ -71,6 +71,7 @@ article {
 .error-404-wrap,
 .home-wrap {
 	padding-bottom: 20px;
+	transform: translateY(-140px);
 }
 figure {
 	margin: 0;
@@ -150,6 +151,24 @@ header {
 }
 .id__title, .id__subtitle {
 	display: none;
+}
+//.goldfish {
+header {
+	transform: scale(0.34) translateY(250px);
+	min-height: 320px;
+}
+.goldfish {
+	position: absolute;
+  left: 50%;
+  transform: translateX(-37%);
+}
+.fish-overlay {
+	background-color: rgba(54, 49, 41, .0);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	left: 0;
 }
 .link--border-bottom {
 	color: $copy-color;
@@ -369,7 +388,7 @@ p {
 #loading {
 	background-color: #fff;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 1000000;
@@ -494,6 +513,9 @@ p {
 		& > div, & > figure {padding: 24px 0;}
 		& > .link-button-2 {margin: 24px 0;}
 	}
+}
+.slide {
+	&:focus{outline:none;}
 }
 
 @media all and (max-width: 479.9px) {
@@ -620,7 +642,6 @@ p {
 		.slick-active button {background-color: $post-nav-color;}
 	}
 	.slide {
-		&:focus{outline:none;}
 		background-color: black;
 		color: white;
 		font-size: 20px;

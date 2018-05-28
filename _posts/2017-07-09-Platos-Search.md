@@ -60,12 +60,6 @@ where m = moss, k = key, D = locked door, and so on.
 
 {{slide['start']}}
 
-The array is scanned by a function that assigns appropriate constructors to moving and interactive elements, giving them functionality.
-
-{{slide['end']}}
-
-{{slide['start']}}
-
 Along his journey, Plato meets others who give him advice. Numbered doors lead to specific levels, so that Plato's Search is an exploratory puzzle based on learning who to trust.
 
 {{slide['end']}}

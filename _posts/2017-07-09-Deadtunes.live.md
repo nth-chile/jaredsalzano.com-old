@@ -24,25 +24,19 @@ style: width:100%
 
 {{slide['start']}}
 
-Deadtunes is a single-page application that implements an MVC pattern written in JavaScript/jQuery.
+I wrote a script that iterates through the items in the Archive database, extracts the relevant data and inserts it into a MongoDB database. Then, I used Express JS to build a RESTful API.
 
 {{slide['end']}}
 
 {{slide['start']}}
 
-I took an unnecessary step that allowed me to learn how to build a MongoDB database and query it from server-side JavaScript. I wrote a script that iterates through the items in the Archive database, extracts the relevant data and inserts it into a MongoDB database.
+ For instance, <code style='word-break: break-all'>http://deadtunes.live/api/1975-08-13</code> returns a JSON response including relevant data about the recordings of each song the Grateful Dead played on August 13, 1975.
 
 {{slide['end']}}
 
 {{slide['start']}}
 
-Then, I used Express JS to build a RESTful API so that, for instance, <code style='word-break: break-all'>http://deadtunes.live/api/1975-08-13</code> returns a JSON response including relevant data about the recordings of each song the Grateful Dead played on August 13, 1975.
-
-{{slide['end']}}
-
-{{slide['start']}}
-
-When the user selects a year, date or track, the client-side code looks at the URL hash and uses it to query the API and update the DOM. Voila &mdash; a SPA.
+More features and archive additions (Bob Dylan and Bob Marley) coming soon!
 
 <a class='link-button-2' href='http://deadtunes.live/' target='_blank'>Go check it out!</a>
 

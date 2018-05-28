@@ -107,7 +107,7 @@ $(document).ready(function(){
 					maxGlare: .04
 				});
 				}, 0);
-			
+
 		}
 		reScalePlatosSearch();
 	}
