@@ -1,7 +1,7 @@
 ---
 title: Plato's Search — Platform Game
 date: 2017-07-09 18:31:00
-featured_image: /assets/images/posts/Platos_Search/Platos_Search-thumb.jpg
+featured_image: /assets/images/posts/Platos_Search/Platos_Search-thumb3.png
 style: width:100%;top:0
 stack_color: white
 ---
