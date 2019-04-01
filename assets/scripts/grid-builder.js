@@ -58,6 +58,7 @@ $(document).ready(function(){
     });
     if ($('.password').val() == 'pass') {
       $.post($(this).attr('action'), { data: GRID_DATA }, function(response){
+          console.log('response: ', response)
           alert('saved');
         });
     } else {

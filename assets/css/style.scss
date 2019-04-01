@@ -1,3 +1,6 @@
+---
+---
+
 $post-nav-color: rgb(84, 81, 77);
 $background-color: rgb(54, 49, 41);
 $copy-color: rgb(255, 250, 236);
@@ -287,7 +290,10 @@ p {
 	perspective: 400px;
 	transform-style: preserve-3d;
 
-	a:visited, a:hover, a:focus {color: $copy-color;}
+	a:visited, a:hover, a:focus {
+		color: $copy-color;
+	}
+
 	h4 {
 		font-weight: normal;
 		line-height: 1.5rem;
