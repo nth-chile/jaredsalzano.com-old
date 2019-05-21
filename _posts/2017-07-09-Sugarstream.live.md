@@ -1,8 +1,8 @@
 ---
 title: Sugarstream — Music Streaming App
 date: 2017-07-09 16:29:00
-featured_image: /assets/images/posts/Sugarstream.live/sugarstream-thumb-2.png
-style: height:120%
+featured_image: /assets/images/posts/Sugarstream.live/sugarstream-thumb-3.png
+style: height:100%
 ---
 {% assign slide = site.data.slide %}
 
