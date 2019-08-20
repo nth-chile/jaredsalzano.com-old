@@ -126,7 +126,7 @@ h5 {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 5rem 0 48px 0;
+	padding: 20rem 0 0px 0;
 	white-space: nowrap;
 	h4, p {
 		color: $copy-color;
@@ -155,15 +155,16 @@ header {
 .id__title, .id__subtitle {
 	display: none;
 }
-//.goldfish {
+
 header {
-	transform: scale(0.34) translateY(250px);
-	min-height: 320px;
+ 	// transform: scale(0.34) translateY(250px);
+	min-height: 150px;
+	margin-bottom: -20px;
 }
 .goldfish {
 	position: absolute;
   left: 50%;
-  transform: translateX(-37%);
+  transform: translateX(-50%);
 }
 .fish-overlay {
 	background-color: rgba(54, 49, 41, .0);
@@ -172,6 +173,7 @@ header {
 	right: 0;
 	top: 0;
 	left: 0;
+	
 }
 .link--border-bottom {
 	color: $copy-color;
@@ -733,7 +735,7 @@ p {
 	}
 
 	header {
-		margin: 0 auto;
+		margin: 0 auto -55px;
 		width: calc(94vw - 6px);
 	}
 	.quote {
