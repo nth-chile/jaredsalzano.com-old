@@ -1,0 +1,8 @@
+@mixin body-copy {
+  color: $copy-color;
+  // font-family: 'Inconsolata', Consolas, monaco, monospace;
+  font-family: 'Domine', serif;
+	letter-spacing: .6px;
+	font-size: 17px;
+  line-height: 24px;
+}

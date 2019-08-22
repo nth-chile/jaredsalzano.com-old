@@ -6,6 +6,12 @@ $background-color: rgb(54, 49, 41);
 $copy-color: rgb(255, 250, 236);
 $copy-color--dark: rgb(154,152,148);
 
+$black: #24292e;
+$background-color: hsl(183, 99%, 34%);
+$copy-color: rgba(255, 255, 255, 0.97);
+
+@import "typography";
+
 // ANIMATIONS
 @keyframes bounceIn {
 	0% {opacity: 0;}
@@ -18,12 +24,10 @@ $copy-color--dark: rgb(154,152,148);
 		top: 0;
 	}
 }
+
 body {
+	@include body-copy;
 	background-color: $background-color;
-	color: $copy-color;
-	font-family: 'Inconsolata', Consolas, monaco, monospace;
-	font-size: 17px;
-	line-height: 24px;
 	overflow-x: hidden;
 	text-align: center;
 	width: 100%;
@@ -34,15 +38,18 @@ body {
 		background: #36e1c8;
 	}
 }
+
 main {
 	height: 100%;
 	overflow-x: hidden;
 }
+
 a {
 	color: $copy-color;
 	&:visited {color: $copy-color;}
 	&:hover {color: $copy-color--dark;}
 }
+
 a.go-home {
 	color: $copy-color--dark;
 	display: block;
@@ -59,51 +66,65 @@ a.go-home {
 	}
 	svg {fill: $copy-color--dark;}
 }
+
 article {
 	margin-top: 56px;
 	img {margin-bottom:-4px;}
 }
+
 .bold {font-weight:bold;}
+
 .error-404-wrap {
 	height: 100%;
+
 	img {
 		max-width: 100%;
 		margin-top: 80px;
 	}
 }
+
 .error-404-wrap,
 .home-wrap {
 	padding-bottom: 20px;
 	transform: translateY(-140px);
 }
+
 figure {
 	margin: 0;
 	width: 100%;
 }
+
 footer {
 	font-family: 'Lato', sans-serif;
 	margin-top: 48px;
+
 	a {
 		color: $copy-color--dark;
 		&:visited, &:hover, &:focus {color: $copy-color--dark;}
 	}
+
 	h4, .small-text {
 		color: $copy-color--dark;
 		font-weight: normal;
 	}
+
 }
+
 figcaption {
 	max-width: 28rem;
 	margin: 0 auto;
 	opacity: .6;
 	padding: 13px 0;
 }
+
 figcaption a {
 	color: $copy-color;
 	font-weight: bold;
-	&:visited {color: $copy-color;}
-	&:hover, &:focus {color: $copy-color;}
+
+	&:visited { color: $copy-color; }
+	&:hover, &:focus { color: $copy-color; }
 }
+
 .tooltip figcaption {
 	color: #fff;
 	a {
@@ -322,11 +343,16 @@ p {
 .grid__item__wrap {
   box-sizing: border-box;
   float: left;
-  padding: 5px;
+	padding: 5px;
+	opacity: .85;
+
+	&:hover, &:focus {
+		opacity: 1;
+	}
 }
 .grid__item__backdrop {
 	background-color: $copy-color;
-	opacity: .04;
+	opacity: .3;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -380,7 +406,8 @@ p {
 }
 .icon.mail {
 	&:hover path {
-		fill: $copy-color--dark;
+		// fill: $copy-color--dark;
+		fill: #24292e;
 	}
 }
 .icon.github {
@@ -388,9 +415,16 @@ p {
   		fill: #24292e;
   	}
 }
+.icon.twitter {
+	&:hover path {
+		// fill: #1DA1F2;
+		fill: #24292e;
+	}
+}
 .icon.instagram {
   	&:hover path {
-  		fill: #EF4859;
+			// fill: #EF4859;
+			fill: #24292e;
   	}
 }
 #loading {

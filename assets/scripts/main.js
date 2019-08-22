@@ -30,6 +30,13 @@ $(document).ready(function(){
 			);
 		}());
 
+	var tiltOptions = {
+		maxTilt: -3.5,
+		perspective: 400,
+		glare: true,
+		maxGlare: .04
+	}
+
 	//each time slick is re-initialized, $('.slide.slick-active').attr('aria-describedby').slice(-2) increases by ten -_-
 	var slickFix = -10;
 
@@ -100,12 +107,7 @@ $(document).ready(function(){
 			$('.grid__item__wrap:not(.ghost) .grid__item').attr('data-tilt', '');
 			tilt.tilt.destroy.call(tilt);
 				setTimeout(function() {
-					var tilt = $('[data-tilt]').tilt({
-					maxTilt: -3.5,
-					perspective: 400,
-					glare: true,
-					maxGlare: .04
-				});
+					var tilt = $('[data-tilt]').tilt(tiltOptions);
 				}, 0);
 
 		}
@@ -172,12 +174,7 @@ $(document).ready(function(){
 		}
 	}
 	removeLoadScreen();
-	var tilt = 	$('[data-tilt]').tilt({
-					maxTilt: -3.5,
-					perspective: 400,
-					glare: true,
-					maxGlare: .04
-				});
+	var tilt = 	$('[data-tilt]').tilt(tiltOptions);
 
 //** FUNCTION DEFINITIONS **//
 

@@ -14,9 +14,10 @@ var swimPath = fish.swimPath([
 ])
 
 var scene = new THREE.Scene()
-scene.background = new THREE.Color( 0x363129 )
+// scene.background = new THREE.Color( 0x363129 )
+// scene.background = new THREE.Color( 0x363129 )
 var camera = new THREE.PerspectiveCamera(80, 320 / 150, .1, 250)
-var renderer = new THREE.WebGLRenderer()
+var renderer = new THREE.WebGLRenderer({ alpha: true })
 
 renderer.shadowMapEnabled = true;
 
