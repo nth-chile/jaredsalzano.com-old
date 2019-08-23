@@ -1,8 +1,26 @@
 @mixin body-copy {
   color: $copy-color;
-  // font-family: 'Inconsolata', Consolas, monaco, monospace;
   font-family: 'Domine', serif;
 	letter-spacing: .6px;
 	font-size: 17px;
   line-height: 24px;
+}
+
+.small-text {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .1px;
+  line-height: 19px;
+
+  a:hover, a:focus {
+    color: white;
+  }
+
+  p {
+    padding: 5px 0;
+  }
+}
+
+p.small-text {
+  padding: 5px 0;
 }

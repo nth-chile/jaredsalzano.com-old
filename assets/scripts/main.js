@@ -332,11 +332,11 @@ $(document).ready(function(){
   		// $endQuote.addClass('desktop quotation-mark quote__quote')
   		// 			  .css('display', 'inline');
 
-  		$p.css('display', 'inline');
+  		$p.removeClass('d-none');
   		// $p.before($startQuote);
   		// $p.after($endQuote);
   		$($('.quote__source__wrap')[index]).addClass('chosen')
-  									   .css('display', 'inline');
+  									   .removeClass('d-none');
 	}
 	function doSlick() {
 		$('.slick').slick({

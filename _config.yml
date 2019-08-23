@@ -19,7 +19,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Hi. My name is Jared Salzano. I'm a freelance web developer in Brooklyn. I help to turn powerful ideas into living websites and applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jaredsalzano.com"
-available: false
 
 id:
   # avatar: <img alt='avatar' class='avatar' src="assets/images/avatar_tree_square.png" />

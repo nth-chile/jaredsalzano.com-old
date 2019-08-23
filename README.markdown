@@ -33,7 +33,3 @@
 
 ## `<figure>` and `<figcaption>`
 For images that need captions, just see the examples. By using standard HTML, `figure` and `figcaption` will just work.
-
-## The "_config.yml" file
-
-The visibility of your hire status is controlled by the `available` setting in "_config.yml". [YAML](https://learnxinyminutes.com/docs/yaml/) is a data format based on indentation, where an indent is two spaces. This is also where you add new quotes!
