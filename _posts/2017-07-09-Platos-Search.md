@@ -36,7 +36,7 @@ As an exercise in JavaScript and DOM manipulation, I created a platform game fea
 
 {{slide['start']}}
 
-Some features I hadn't decided to add until after I had built a working game. By keeping functionality separated, the code was easy to build upon.
+Along his journey, Plato meets others who give him advice. But it isn't always good advice. Plato's Search is an exploratory puzzle based on learning who to trust.
 
 {{slide['end']}}
 
@@ -54,13 +54,7 @@ Adding levels is easy:
   'mmmmmm!!!mmmmmm']
 </pre>
 
-where m = moss, k = key, D = locked door, and so on.
-
-{{slide['end']}}
-
-{{slide['start']}}
-
-Along his journey, Plato meets others who give him advice. Numbered doors lead to specific levels, so that Plato's Search is an exploratory puzzle based on learning who to trust.
+where m = moss, ! = lava, k = key, D = locked door, and so on.
 
 {{slide['end']}}
 

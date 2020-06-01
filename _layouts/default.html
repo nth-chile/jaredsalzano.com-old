@@ -1,56 +1,53 @@
 ---
 ---
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}"> <!--<![endif]-->
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="development, developer, web development, web developer, coding, programming, front-end web development, website development, web app development, new york development, new york developer, new york web developer"/>
-	<meta name="robots" content="follow, all" />
-	<meta name="language" content="en" />
-	<meta name="googlebot" content="index, follow" />
-	<meta name="revisit-after" content="20 days" />
-	<meta property="og:title" content="Jared Salzano – Portfolio" />
-	<meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
-	<meta property="og:url" content="https://www.jaredsalzano.com" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" type="text/css" href='{{ '/assets/css/normalize.css' | prepend: site.url }}'/>
-	<link rel="stylesheet" type="text/css" href='{{ '/assets/css/style.css' | prepend: site.url }}?ver=1'/>
-	<link rel="stylesheet" type="text/css" href='{{ '/assets/slick/slick.css' | prepend: site.url }}'/>
-	<link href="https://fonts.googleapis.com/css?family=Domine:400,700&display=swap" rel="stylesheet">
-</head>
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+		<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="development, developer, web development, web developer, coding, programming, front-end web development, website development, web app development, new york development, new york developer, new york web developer"/>
+		<meta name="robots" content="follow, all" />
+		<meta name="language" content="en" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="revisit-after" content="20 days" />
+		<meta property="og:title" content="Jared Salzano – Portfolio" />
+		<meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+		<meta property="og:url" content="https://www.jaredsalzano.com" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" type="text/css" href='{{ '/assets/css/normalize.css' | prepend: site.url }}'/>
+		<link rel="stylesheet" type="text/css" href='{{ '/assets/css/style.css' | prepend: site.url }}?ver=1'/>
+		<link rel="stylesheet" type="text/css" href='{{ '/assets/slick/slick.css' | prepend: site.url }}'/>
+		<link href="https://fonts.googleapis.com/css?family=Domine:400,700&display=swap" rel="stylesheet">
+	</head>
 
+	{{ content }}
 
-<body>
-	<main>{{ content }}</main>
+		<script type="text/javascript" src='{{ '/assets/scripts/jquery-1.11.0.min.js' | prepend: site.url }}'></script>
+		<script type="text/javascript" src='{{ '/assets/scripts/jquery-migrate-1.2.1.min.js' | prepend: site.url }}'></script>
+		<script type="text/javascript" src='{{ '/assets/slick/slick.min.js' | prepend: site.url }}'></script>
+		<script type="text/javascript" src='{{ '/assets/scripts/masonry.pkgd.min.js' | prepend: site.url }}'></script>
+		<script type="text/javascript" src='{{ '/assets/scripts/GRID_DATA.js' | prepend: site.url }}'></script>
+		<script type="text/javascript" src='{{ '/assets/scripts/tilt.jquery.js' | prepend: site.url }}'></script>
+		<script type="text/javascript" src='{{ '/assets/scripts/main.js' | prepend: site.url }}'></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	<script type="text/javascript" src='{{ '/assets/scripts/jquery-1.11.0.min.js' | prepend: site.url }}'></script>
-	<script type="text/javascript" src='{{ '/assets/scripts/jquery-migrate-1.2.1.min.js' | prepend: site.url }}'></script>
-	<script type="text/javascript" src='{{ '/assets/slick/slick.min.js' | prepend: site.url }}'></script>
-	<script type="text/javascript" src='{{ '/assets/scripts/masonry.pkgd.min.js' | prepend: site.url }}'></script>
-	<script type="text/javascript" src='{{ '/assets/scripts/GRID_DATA.js' | prepend: site.url }}'></script>
-	<script type="text/javascript" src='{{ '/assets/scripts/tilt.jquery.js' | prepend: site.url }}'></script>
-	<script type="text/javascript" src='{{ '/assets/scripts/main.js' | prepend: site.url }}'></script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-105812256-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-</body>
+			ga('create', 'UA-105812256-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
 </html>

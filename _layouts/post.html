@@ -2,66 +2,69 @@
 layout: default
 ---
 
-<div id='loading'><!-- <img src='{{ '/assets/images/loading.gif' | prepend: site.url }}' height='120' width='120'/> --></div>
-<script src='{{ '/assets/scripts/spin.min.js' | prepend: site.url }}'></script>
-	<script>
-		var opts = {
-	  lines: 7 // The number of lines to draw
-	, length: 0 // The length of each line
-	, width: 8 // The line thickness
-	, radius: 25 // The radius of the inner circle
-	, scale: 0.5 // Scales overall size of the spinner
-	, corners: 1 // Corner roundness (0..1)
-	, color: '#4d4545' // #rgb or #rrggbb or array of colors
-	, opacity: 0.1 // Opacity of the lines
-	, rotate: 21 // The rotation offset
-	, direction: 1 // 1: clockwise, -1: counterclockwise
-	, speed: 0.6 // Rounds per second
-	, trail: 56 // Afterglow percentage
-	, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
-	, zIndex: 2e9 // The z-index (defaults to 2000000000)
-	, className: 'spinner' // The CSS class to assign to the spinner
-	, top: '50%' // Top position relative to parent
-	, left: '50%' // Left position relative to parent
-	, shadow: false // Whether to render a shadow
-	, hwaccel: false // Whether to use hardware acceleration
-	, position: 'absolute' // Element positioning
-	}
-	var target = document.getElementById('loading')
-	var spinner = new Spinner(opts).spin(target);
-	</script>
-<nav class='post-nav'>
-<a class='post-nav__home' href='{{site.url}}'>
-	<svg width="10" height="10" viewBox="0 0 10 10"><path d="M4.64 0L0 3.48v6.495h3.132V5.567h3.015v4.408H9.28V3.48z" fill-rule="evenodd"/></svg>
-	<h4 class='desktop'>Go back home</h4>
-</a>
-<h4 class='page-title'>{{ page.title }}</h4>
+<body class="post">
+	<main>
+		<div id='loading'><!-- <img src='{{ '/assets/images/loading.gif' | prepend: site.url }}' height='120' width='120'/> --></div>
+		<script src='{{ '/assets/scripts/spin.min.js' | prepend: site.url }}'></script>
+			<script>
+				var opts = {
+				lines: 7 // The number of lines to draw
+			, length: 0 // The length of each line
+			, width: 8 // The line thickness
+			, radius: 25 // The radius of the inner circle
+			, scale: 0.5 // Scales overall size of the spinner
+			, corners: 1 // Corner roundness (0..1)
+			, color: '#4d4545' // #rgb or #rrggbb or array of colors
+			, opacity: 0.1 // Opacity of the lines
+			, rotate: 21 // The rotation offset
+			, direction: 1 // 1: clockwise, -1: counterclockwise
+			, speed: 0.6 // Rounds per second
+			, trail: 56 // Afterglow percentage
+			, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+			, zIndex: 2e9 // The z-index (defaults to 2000000000)
+			, className: 'spinner' // The CSS class to assign to the spinner
+			, top: '50%' // Top position relative to parent
+			, left: '50%' // Left position relative to parent
+			, shadow: false // Whether to render a shadow
+			, hwaccel: false // Whether to use hardware acceleration
+			, position: 'absolute' // Element positioning
+			}
+			var target = document.getElementById('loading')
+			var spinner = new Spinner(opts).spin(target);
+			</script>
+		<nav class='post-nav'>
+		<a class='post-nav__home' href='{{site.url}}'>
+			<svg width="10" height="10" viewBox="0 0 10 10"><path d="M4.64 0L0 3.48v6.495h3.132V5.567h3.015v4.408H9.28V3.48z" fill-rule="evenodd"/></svg>
+			<h4 class='desktop'>Go back home</h4>
+		</a>
+		<h4 class='page-title'>{{ page.title }}</h4>
 
-{% if page.previous != nil %}
-	{% assign prev = page.previous.url | prepend: site.url %}
-{% else %}
-	{% assign prev = site.posts.first.url | prepend: site.url %}
-{% endif %}
+		{% if page.previous != nil %}
+			{% assign prev = page.previous.url | prepend: site.url %}
+		{% else %}
+			{% assign prev = site.posts.first.url | prepend: site.url %}
+		{% endif %}
 
-{% if page.next != nil %}
-	{% assign next = page.next.url | prepend: site.url %}
-{% else %}
-	{% assign next = site.posts.last.url | prepend: site.url %}
-{% endif %}
+		{% if page.next != nil %}
+			{% assign next = page.next.url | prepend: site.url %}
+		{% else %}
+			{% assign next = site.posts.last.url | prepend: site.url %}
+		{% endif %}
 
-<a class='prev' href='{{ next }}'>
-	<svg width="10" height="10" viewBox="0 0 10 10"><path d="M0 4.9l4.9 4.9.868-.868L2.357 5.52H9.8V4.28H2.357L5.768.868 4.9.001z" fill-rule="evenodd"/></svg>
-</a>
-<a class='next' href='{{ prev }}'>
-	<svg width="10" height="10" viewBox="0 0 10 10"><path d="M9.8 4.9L4.9 9.8l-.868-.868L7.443 5.52H0V4.28h7.443L4.032.868 4.9.001z" fill-rule="evenodd"/></svg>
-</a>
-</nav>
-<!-- <div class='loading'><img src='{{ '/assets/images/loading.gif' | prepend: site.url }}'/></div> -->
-<article class='slick'>{{ content }}</article>
-<div class='desktop'>
-	<a class='go-home' href='{{site.url}}'>
-		<svg width="11" height="11" viewBox="0 0 11 11"><path d="M0 5.5L5.5 11l.975-.976-3.83-3.829H11V4.803H2.646L6.475.973 5.5 0z"/></svg>
-		go back home
-	</a>
-	{% include footer.html %}
-</div>
+		<a class='prev' href='{{ next }}'>
+			<svg width="10" height="10" viewBox="0 0 10 10"><path d="M0 4.9l4.9 4.9.868-.868L2.357 5.52H9.8V4.28H2.357L5.768.868 4.9.001z" fill-rule="evenodd"/></svg>
+		</a>
+		<a class='next' href='{{ prev }}'>
+			<svg width="10" height="10" viewBox="0 0 10 10"><path d="M9.8 4.9L4.9 9.8l-.868-.868L7.443 5.52H0V4.28h7.443L4.032.868 4.9.001z" fill-rule="evenodd"/></svg>
+		</a>
+		</nav>
+		<!-- <div class='loading'><img src='{{ '/assets/images/loading.gif' | prepend: site.url }}'/></div> -->
+		<article class='slick'>{{ content }}</article>
+		<div class='desktop'>
+			<!-- <a class='go-home' href='{{site.url}}'>
+				<svg width="11" height="11" viewBox="0 0 11 11"><path d="M0 5.5L5.5 11l.975-.976-3.83-3.829H11V4.803H2.646L6.475.973 5.5 0z"/></svg>
+				go back home
+			</a> -->
+			{% include footer.html %}
+		</div>
+	</main>
