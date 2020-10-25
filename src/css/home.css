@@ -1,0 +1,85 @@
+body.home {
+  font-size: 20px;
+
+  @media (min-width: 600px) {
+    font-size: 24px;
+  } 
+
+  li {
+    margin-bottom: .125em;
+  }
+
+  .page-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-bg {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    bottom: -60px;
+    left: -60px;
+    /* transform: scale(1.1); */
+    filter: blur(30px) brightness(93%);
+    background-image: url(../assets/img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .trigger-repaint {
+    transform: scale(1);
+  }
+
+  .page-content {
+    padding: 60px 10px;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 600px) {
+      padding: 60px;
+    }
+
+  }
+
+  .page-content-main {
+    flex-grow: 1;
+  }
+
+  .page-footer {
+    text-align: center;
+    padding-top: 60px;
+    
+    li {
+      display: inline-block;
+      margin: 0 5px;
+
+      @media (min-width: 600px) {
+        font-size: 39px;
+      }
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    letter-spacing: .4px;
+  }
+}

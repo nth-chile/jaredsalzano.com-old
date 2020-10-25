@@ -1,2 +1,4 @@
 gitignored
 .DS_Store
+node_modules
+Untitled.code-workspace
