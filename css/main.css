@@ -1,0 +1,215 @@
+html, body	{
+	font-family: 'Work Sans', arial, sans-serif;
+	height: 100%;
+}
+h1	{
+	font-family: 'work sans', 'arial black', sans-serif;
+	font-size: 200%;
+}
+#links h1 {
+	font-size: 160%;
+}
+main {
+	margin: 5% 16% 0;
+}
+main a:hover	
+	color: #a6a6a6;
+}
+h1 a, h2 a, h3 a, h4 a, b a 	{
+	text-decoration: none;
+}
+
+h2, h3	{
+	font-family: "Arial Black", arial, sans-serif;
+	font-weight: 900;
+	font-size: 95%;
+	}
+
+#logo img {
+	width:8%;
+	padding:1em 1em 2em;
+}
+nav {
+	position:absolute;
+	display: inline-block;
+	top:0;
+	left:0em;
+	margin-top:4%;
+	height:6em;
+	width: 100%;
+	white-space:nowrap;
+	overflow: hidden;
+}
+.navlinks {
+	display:inline-block;
+	height:3em;
+	width:8%;
+	margin:0 1% 0;
+}
+.navlinks img {
+	padding-top: .5em;
+	/*max-height:1.7em;
+	min-height:1.5em;*/
+	vertical-align: middle;
+}
+.navlinks img:hover {
+	transform: scale(1.08, 1.08);
+	-ms-transform: scale(1.08, 1.08);
+}
+#home {
+	padding-left: 15%;
+}
+[href="discography.html"] {
+	width:15%;
+}
+[href="contact.php"]{
+	width:11%;
+}
+
+p.about {
+	line-height:140%;
+}
+a	{
+	color: black;
+}
+
+
+aside img:hover{
+	opacity: 0.6;
+    filter: alpha(opacity=60);
+	color:#A6A6A6
+}
+#aside-on-disco-page	{
+	margin: 1em 0 0 0;
+	white-space: nowrap;
+	}
+#aside-on-disco-page img	{
+	width: 100%;
+}
+.section-on-disco-page	{
+	padding-right:3%;
+	display: inline-block;
+	width:31%;
+	white-space: normal;
+	float:left;
+	}
+.section-on-disco-page:nth-child(3)	{
+	padding-right:0;
+}
+[alt="I Am Miami album cover"] {
+	border: 1px solid black;
+}
+#links	{
+	margin-top:3em;
+	margin-bottom:3em;
+	float:left;
+	clear:left;
+}
+#socmedia img	{
+	width: 30px;
+	height: 30px;
+}
+#videoh1	{
+	margin-bottom:3em;
+}
+.video	{
+	margin-bottom:2em;
+	border:1px solid black;
+    display: block;
+}
+iframe {
+	width: 100%;
+}
+/*contact page*/
+#contactheader {
+	margin-bottom: 0;
+	/*background-image: url("../images/stripes.svg");
+	background-size: cover;*/
+}
+form {
+	width:100%;
+}
+.formblocks {
+	background-color:rgba(209,255,66,.75);
+	padding:1% 2%;
+	overflow: hidden;
+}
+.formblocks:nth-child(1), .formblocks:nth-child(2) {
+	white-space: nowrap;
+}
+.formblocks input, .formblocks textarea {
+	position: relative;
+	right:0;
+	background-color:rgba(209,255,66,.0);
+	border:none;
+	width:90%;
+}
+.formblocks textarea {
+	border: 1px solid black;
+	resize: vertical;
+	margin-top:2%;
+	width:100%;
+	height:8em;
+}
+.formblocks [type="submit"] {
+	position: relative;
+	right:0;
+	width:5em;
+	float:right;
+	cursor: pointer;
+}
+:focus {
+	outline:none;
+}
+
+
+@media only screen and (max-width: 768px) and (orientation:portrait) {
+	#logo img {
+		display:none;
+	}
+	header {
+		height:6em;
+	}
+	nav {
+		margin-top:3.4%;	
+	}
+	.navlinks {
+		width:13%;
+		margin:0 1.3% 0;
+	}
+	#home {
+		padding-left: 2%;
+	}
+	[href="videos.html"] {
+		width:8%;
+	}
+	[href="contact.php"]{
+		width:17%;
+	}
+	#mobilemain {
+		margin: 5%;
+	}
+	#videoh1 {
+		text-align: justify;
+	}
+	.video {
+		width:100%;
+	}
+	#aside-on-disco-page	{
+	width: 100%;
+	margin: 0;
+	white-space: normal;
+	}
+	#aside-on-disco-page img	{
+	width: 100%;
+	}
+	.section-on-disco-page	{
+	padding-right:0;
+	width:100%;
+	}
+	#mobilemain p.welcome, #mobilemain section, p.about {
+		font-size: 2em;
+	}
+
+
+}
