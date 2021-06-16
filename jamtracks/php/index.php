@@ -16,7 +16,7 @@ function listFolderFiles($arr, $dir, $date) {
 				$track = array(
 					'date'=>$date,
 					'duration'=>$ThisFileInfo['playtime_string'],
-					'src'=>'http://wedowedo.us/jamtracks/php/tracks/'.$date.'/'.$ff
+					'src'=>'./jamtracks/php/tracks/'.$date.'/'.$ff
 					);
 				array_push($array, $track);
 			}
