@@ -2,4 +2,4 @@
   publish = "dist/"
 
 [context.wedo]
-  publish = "."
+  publish = "./"
