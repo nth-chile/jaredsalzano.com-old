@@ -3,3 +3,6 @@
 
 [context.wedo]
   publish = "./"
+
+[context.studioapt]
+  publish = "./"
