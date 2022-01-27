@@ -90,27 +90,21 @@ p, .p { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georg
 
 .about-wrap .section-services__img-wrap img { position: relative; top: 50%; transform: translateY(-50%); width: 100%; }
 
-.about-wrap .logo-grid { grid-template-columns: repeat(1, 1fr); margin-left: auto; margin-top: 45px; margin-right: auto; margin-bottom: 180px; display: inline-grid; position: relative; }
+.about-wrap .logos { max-width: 650px; display: flex; flex-wrap: wrap; justify-content: center; margin-left: auto; margin-top: 45px; margin-right: auto; margin-bottom: 100px; }
 
-@media (min-width: 490px) { .about-wrap .logo-grid { grid-template-columns: repeat(3, 1fr); } }
+.about-wrap .logos > div { padding: 0 10px 28px; }
 
-@media (min-width: 900px) { .about-wrap .logo-grid { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 550px) { .about-wrap .logos > div { padding: 0 19px 28px; } }
 
-.about-wrap .logo-grid > div { padding: 0 0 28px; }
-
-@media (min-width: 550px) { .about-wrap .logo-grid > div { padding: 0 19px 28px; } }
-
-.about-wrap .logo-grid img { position: relative; margin-left: auto; margin-right: auto; margin-bottom: 28px; top: 50%; transform: translateY(-50%); }
+.about-wrap .logos img { position: relative; margin-left: auto; margin-right: auto; margin-bottom: 28px; top: 50%; transform: translateY(-50%); }
 
 .about-wrap .logo-Google { width: 88px; }
 
-.about-wrap .logo-826CHI { width: 54px; }
+.about-wrap .logo-Square { width: 56px; }
 
 .about-wrap .logo-Gusto { width: 79px; }
 
 .about-wrap .logo-Nestle { width: 55px; }
-
-.about-wrap .logo-Uptake { width: 94px; }
 
 .about-wrap .logo-JLL { width: 67px; }
 
@@ -126,13 +120,7 @@ p, .p { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georg
 
 .about-wrap .logo-Youtube { width: 52px; }
 
-.about-wrap .logo-Spear { width: 125px; }
-
-.about-wrap .logo-Grove { width: 95px; }
-
-.about-wrap .logo-Thought { width: 66px; }
-
-.about-wrap .section-approach { margin-bottom: 160px; }
+.about-wrap .logo-NavyPier { width: 88px; }
 
 .about-wrap .section-approach__grid { display: inline-grid; margin-top: 48px; grid-template-columns: repeat(1, 1fr); }
 
@@ -140,13 +128,9 @@ p, .p { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georg
 
 @media (min-width: 780px) { .about-wrap .section-approach__grid { grid-template-columns: repeat(3, 1fr); } }
 
-.about-wrap .section-approach__grid h2 { font-family: "GT-America-Mono-Regular", sans-serif; font-size: 13px; letter-spacing: 0.5px; line-height: 22px; font-weight: normal; }
-
 .about-wrap .section-approach__grid > div { display: inline-block; margin-left: 17px; margin-right: 17px; margin-bottom: 38px; width: 201px; }
 
 .about-wrap .section-approach__grid > div img { height: 127px; width: 100%; }
-
-.about-wrap .section-team img { margin-bottom: 52px; width: 322px; }
 
 .contact-wrap { margin-bottom: 87px; }
 
@@ -332,17 +316,13 @@ h4 { color: white; font-size: 14px; line-height: 22px; letter-spacing: 0.005em; 
 
 @media (min-width: 900px) { .header-nav-wrap { margin-left: auto; grid-column: 3/4; grid-row: 1/3; height: auto; } }
 
-.header-nav-wrap ul { list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: space-around; align-items: center; font-size: 0; }
+.header-nav-wrap ul { list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: space-around; align-items: center; font-size: 13px; line-height: 22px; letter-spacing: -0.5px; font-family: "GT-America-Mono-Regular"; height: 100%; }
 
 @media (min-width: 900px) { .header-nav-wrap ul { display: block; } }
 
-.header-nav-wrap a, .header-nav-wrap svg { vertical-align: middle; }
+.header-nav-wrap a { color: rgba(35, 31, 32, 0.5); text-decoration: none; display: inline-block; }
 
-.header-nav-wrap a { color: rgba(77, 69, 69, 0.5); text-decoration: none; line-height: 43px; display: block; }
-
-@media (min-width: 900px) { .header-nav-wrap a { line-height: 30px; display: block; } }
-
-.header-nav-wrap a:hover, .header-nav-wrap a:focus { color: rgba(77, 69, 69, 0.5); }
+.header-nav-wrap a:hover, .header-nav-wrap a:focus { color: #231f20; }
 
 .header-nav-wrap li { display: inline-block; padding: 0 10px; width: 100%; border-right: 1px solid rgba(77, 69, 69, 0.15); margin-top: 6px; margin-bottom: 7px; text-align: center; }
 
@@ -350,17 +330,11 @@ h4 { color: white; font-size: 14px; line-height: 22px; letter-spacing: 0.005em; 
 
 @media (min-width: 900px) { .header-nav-wrap li { border-right: none; height: auto; width: auto; margin: 0 8px; padding: 0; } }
 
-.about-wrap .header-nav-wrap a.about-link { color: #231f20; }
+.about-wrap .header-nav-wrap a.about-link { color: #231f20; border-bottom: 1px solid #231f20; }
 
-.about-wrap .header-nav-wrap a.about-link:hover, .about-wrap .header-nav-wrap a.about-link:focus { color: #4d4545; }
+.home-wrap .header-nav-wrap a.home-link { color: #231f20; border-bottom: 1px solid #231f20; }
 
-.home-wrap .header-nav-wrap a.home-link { color: #231f20; }
-
-.home-wrap .header-nav-wrap a.home-link:hover, .home-wrap .header-nav-wrap a.home-link:focus { color: #4d4545; }
-
-.contact-wrap .header-nav-wrap a.contact-link { color: #231f20; }
-
-.contact-wrap .header-nav-wrap a.contact-link:hover, .contact-wrap .header-nav-wrap a.contact-link:focus { color: #4d4545; }
+.contact-wrap .header-nav-wrap a.contact-link { color: #231f20; border-bottom: 1px solid #231f20; }
 
 .quote-wrap { color: #3c3535; white-space: normal; padding-top: 6px; }
 
