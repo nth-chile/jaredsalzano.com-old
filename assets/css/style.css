@@ -76,19 +76,13 @@ p, .p { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georg
 
 @media (min-width: 900px) { .about-wrap .section-services article:first-child { margin-right: 60px; } }
 
-.about-wrap .section-services article:first-child .section-services__img-wrap { width: 246px; }
-
 @media (min-width: 900px) { .about-wrap .section-services article:nth-child(2) { margin-right: 30px; } }
-
-.about-wrap .section-services article:nth-child(2) .section-services__img-wrap { width: 215px; }
 
 @media (min-width: 900px) { .about-wrap .section-services article:nth-child(3) { margin-right: 30px; } }
 
-.about-wrap .section-services article:nth-child(3) .section-services__img-wrap { width: 265px; }
+.about-wrap .section-services__img-wrap { text-align: left; height: 138px; position: relative; margin-bottom: 19px; }
 
-.about-wrap .section-services__img-wrap { height: 203px; position: relative; margin-bottom: 19px; }
-
-.about-wrap .section-services__img-wrap img { position: relative; top: 50%; transform: translateY(-50%); width: 100%; }
+.about-wrap .section-services__img-wrap img { height: 100%; width: auto; }
 
 .about-wrap .logos { max-width: 650px; display: flex; flex-wrap: wrap; justify-content: center; margin-left: auto; margin-top: 45px; margin-right: auto; margin-bottom: 100px; }
 
@@ -192,17 +186,17 @@ body *::selection { background: #f7e27f; }
 
 button { cursor: pointer; }
 
-.page-content { margin-top: calc(38px + 56px); padding: 0 20px; position: relative; }
+.page-content { margin-top: calc(38px + 56px); position: relative; }
 
-@media (min-width: 900px) { .page-content { padding: 0 35px; margin-top: 38px; } }
+@media (min-width: 900px) { .page-content { margin-top: 38px; } }
+
+.container { padding: 0 20px; }
+
+@media (min-width: 900px) { .container { padding: 0 35px; } }
 
 .home-wrap .site-header { background: #fcf5ea; }
 
 @media (min-width: 900px) { .home-wrap .site-header { background: rgba(0, 0, 0, 0); } }
-
-.home-wrap .page-content { margin-top: calc(38px + 101px); position: relative; }
-
-@media (min-width: 900px) { .home-wrap .page-content { margin-top: 38px; } }
 
 .project-wrap article.slick { padding-top: 56px; }
 
